@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    animation-name: background;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.doc {
+    background-color: aliceblue;
+    width: 95%;
+    max-width: 1300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+#tittle {
+    color: #ffffff;
+}
+
+.block {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.container {
+    background-color: rgba(54, 248, 255, 0.221);
+    display: flex;
+    gap: 3px;
+}
+
+.perfil {
+    border-radius: 0% 10% 40% 10%;
+    height: 200px;
+    width: 85%;
+    padding: 10px;
+}
+
+.perfil :hover {
+    border-radius: 0% 10% 40% 10%;
+    height: 210px;
+    padding: 0px;
+}
+
+.tecno {
+    width: 50px;
+    margin: 4px;
+}
+
+p {
+    font-size: 13px;
+}
+
+p.title {
+    width: 270px;
+    font-size: 17px;
+    margin-top: 15px;
+    background-color: #0d0252;
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+.text {
+    background-color: rgba(95, 158, 160, 0.221);
+    margin-bottom: 0;
+}
+
+section {
+    padding: 5px;
+    width: 310px;
+    border: 1px solid rgb(36, 79, 49);
+    width: 100%;
+    font-size: 14px;
+}
+
+#marco_Gmail {
+    background-color: #ffffff;
+    display: flex;
+    width: 270px;
+    height: 30px;
+    margin-bottom: 5px;
+    gap: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    box-shadow: 2px 3px rgba(139, 139, 139, 0.5);
+}
+
+#marco_Github {
+    background-color: #ffffff;
+    display: flex;
+    width: 150PX;
+    height: 30px;
+    margin-bottom: 5px;
+    gap: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    box-shadow: 2px 3px rgba(139, 139, 139, 0.5);
+}
+
+#marco_linkedin {
+    background-color: #ffffff;
+    display: flex;
+    width: 150PX;
+    height: 30px;
+    margin-bottom: 5px;
+    gap: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    box-shadow: 2px 3px rgba(139, 139, 139, 0.5);
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    display: flex;
+    display: flex;
+    align-items: center;
+    width: 80PX;
+    height: 30px;
+    gap: 10px;
+    padding: 2px;
+    font-size: 80%;
+
+}
+
+.icon_gmail {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.icon_github {
+    position: relative;
+    margin-left: 4px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: rgba(218, 218, 218, 0.63);
+}
+
+.icon_linkedin {
+    position: relative;
+    margin-left: 4px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: rgba(218, 218, 218, 0.63);
+}
+
+.stack {
+    display: flex;
+}
+
+.stack img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+.bs-decor {
+    font-size: 15px;
+}
+
+
+@keyframes background {
+    0% {
+        background-color: rgb(0, 54, 13);
+    }
+
+    50% {
+        background-color: #520227;
+    }
+
+    100% {
+        background-color: #0d0252;
+    }
+}
+
+@media (max-width: 930px) {
+    .doc {
+        flex-direction: column;
+        width: 90%;
+        min-width: 415px;
+    }
+
+
+    .section {
+        width: 30%;
+    }
+
+    .descripcion {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .perfil {
+        width: 220px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    #marco_Gmail,
+    #marco_Github,
+    #marco_linkedin {
+        width: 50%;
+        min-width: 210px;
+    }
+
+
+
+}
